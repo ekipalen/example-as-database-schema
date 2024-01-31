@@ -1,0 +1,4 @@
+{
+    "db_path": "music.db",
+    "query": "\nSELECT \n    Album.Title AS AlbumTitle, \n    Artist.Name AS ArtistName \nFROM \n    Album \nINNER JOIN \n    Artist ON Album.ArtistId = Artist.ArtistId \nLIMIT 10;\n"
+}
